@@ -51,7 +51,6 @@ static WebDriver driver;
 		htmlReporter = Base1.getHtmlReporter();
 		reports = Base1.getExtentReports();
 		extentTest = Base1.getTest("VerifyUserCanAddNewAddress");
-		
 		driver = Base1.getDriver(browser);
 	}
 	
