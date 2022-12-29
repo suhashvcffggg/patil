@@ -36,7 +36,6 @@ static WebDriver driver;
 	ExtentHtmlReporter htmlReporter;
 	ExtentReports reports;
 	ExtentTest extentTest;
-	
 	LoginPage lp;
 	HomePage hp;
 	ProfilePage pp;
@@ -108,7 +107,6 @@ static WebDriver driver;
 	@AfterClass
 	public void afterClass() {
 		reports.flush();
-		
 		Base1.unloadDriver();
 		
 	}
