@@ -36,7 +36,6 @@ static WebDriver driver;
 	ExtentHtmlReporter htmlReporter;
 	ExtentReports reports;
 	ExtentTest extentTest;
-	
 	LoginPage lp;
 	HomePage hp;
 	ProfilePage pp;
@@ -53,15 +52,12 @@ static WebDriver driver;
 		extentTest = Base1.getTest("VerifyUserCanAddNewAddress");
 		driver = Base1.getDriver(browser);
 	}
-	
 	@BeforeMethod
 	public void beforeMethod() {
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 		pp = new ProfilePage(driver);
 	}
-	
-	
 	@Test(priority = 4)
 	public void verifyUserCanOpenProfilePage() {
 		//hover on profileName
@@ -108,7 +104,6 @@ static WebDriver driver;
 	@AfterClass
 	public void afterClass() {
 		reports.flush();
-		
 		Base1.unloadDriver();
 		
 	}
