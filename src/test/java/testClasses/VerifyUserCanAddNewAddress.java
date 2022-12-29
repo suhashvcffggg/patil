@@ -52,15 +52,12 @@ static WebDriver driver;
 		extentTest = Base1.getTest("VerifyUserCanAddNewAddress");
 		driver = Base1.getDriver(browser);
 	}
-	
 	@BeforeMethod
 	public void beforeMethod() {
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 		pp = new ProfilePage(driver);
 	}
-	
-	
 	@Test(priority = 4)
 	public void verifyUserCanOpenProfilePage() {
 		//hover on profileName
