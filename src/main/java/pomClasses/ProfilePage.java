@@ -47,8 +47,6 @@ WebDriver driver;
 		
 		this.driver = driver;
 	}
-	
-	
 	public boolean checkUserOnProfilePage() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -56,8 +54,7 @@ WebDriver driver;
 		}catch(Exception e) {
 			return false;
 		}
-		return true;
-		
+		return true;	
 	}
 	
 	public void clickOnManageAddress() {
